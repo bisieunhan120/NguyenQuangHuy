@@ -11,11 +11,12 @@
                     @User.Identity.GetUserName() <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="@Url.Action("Attending","Courses")">Course I'm Going</a></li>
+                    <li>@Html.ActionLink("My Upcoming Courses", "Mine", "Courses")</li>
+                    <li>@Html.ActionLink("Course I'm Going", "Attending", "Courses")</li>
                     <li><a href="#">Lecture I'm Flowing</a></li>
                     <li role="separator" class="divider"></li>
                     <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
-                  </ul>
+                </ul>
 
             </li>
         </ul>
